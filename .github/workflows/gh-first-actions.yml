@@ -1,0 +1,11 @@
+name: Very First Workflow
+on: workflow_dispatch # To run a workflow manually
+jobs:
+  first-job:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello
+        run: echo "Hello World"
+      - name: Print bye
+        run: echo "Bye there"
